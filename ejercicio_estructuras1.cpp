@@ -1,4 +1,4 @@
-// ejercicio_estructuras1.cpp: define el punto de entrada de la aplicación de consola.
+// ejercicio_estructuras1.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 //
 
 #include "stdafx.h"
@@ -13,7 +13,7 @@ struct fecha
 {
 	int dia;
 	int mes;
-	int año;
+	int anio;
 };
 
 struct agenda
@@ -55,7 +55,7 @@ void cargar_datos()
 		cout << "Nombre: ";
 		gets_s(agendita[i].nombre);
 		cout << "Fecha de Nacimiento(dd/m/aaaa): ";
-		cin >> agendita[i].fe_na.dia >> agendita[i].fe_na.mes >> agendita[i].fe_na.año;
+		cin >> agendita[i].fe_na.dia >> agendita[i].fe_na.mes >> agendita[i].fe_na.anio;
 		cout << "Telefono: ";
 		gets_s(agendita[i].telefono);
 		gets_s(agendita[i].telefono);
@@ -113,7 +113,7 @@ void buscar()
 		if (name == agendita[x].nombre)
 		{
 			/*cout << "Nombre: " << agendita[x].nombre << "\tApellido: " << agendita[x].apellidos
-				<< "\nFecha de nacimiento: " << agendita[x].fe_na.dia << "/" << agendita[x].fe_na.mes << "/" << agendita[x].fe_na.año
+				<< "\nFecha de nacimiento: " << agendita[x].fe_na.dia << "/" << agendita[x].fe_na.mes << "/" << agendita[x].fe_na.aï¿½o
 				<< "\nTelfono: " << agendita[x].telefono << "\tMail: " << agendita[x].mail << endl << endl;*/
 			mostrar_datos(x);
 		}
@@ -132,7 +132,7 @@ void buscar_mes()
 		if (mesesito == agendita[x].fe_na.mes)
 		{
 			/*cout << "Nombre: " << agendita[x].nombre << "\tApellido: " << agendita[x].apellidos
-				<< "\nFecha de nacimiento: " << agendita[x].fe_na.dia << "/" << agendita[x].fe_na.mes << "/" << agendita[x].fe_na.año
+				<< "\nFecha de nacimiento: " << agendita[x].fe_na.dia << "/" << agendita[x].fe_na.mes << "/" << agendita[x].fe_na.aï¿½o
 				<< "\nTelfono: " << agendita[x].telefono << "\tMail: " << agendita[x].mail << endl << endl;*/
 			mostrar_datos(x);
 		}
@@ -152,6 +152,6 @@ void mostrar_todo()
 void mostrar_datos(int indice)
 {
 	cout << "Nombre: " << agendita[indice].nombre << "\tApellido: " << agendita[indice].apellidos
-		<< "\nFecha de nacimiento: " << agendita[indice].fe_na.dia << "/" << agendita[indice].fe_na.mes << "/" << agendita[indice].fe_na.año
+		<< "\nFecha de nacimiento: " << agendita[indice].fe_na.dia << "/" << agendita[indice].fe_na.mes << "/" << agendita[indice].fe_na.aï¿½o
 		<< "\nTelfono: " << agendita[indice].telefono << "\tMail: " << agendita[indice].mail << endl << endl;
 }
